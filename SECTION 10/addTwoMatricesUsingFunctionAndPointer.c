@@ -1,0 +1,1 @@
+/*this program add two matrices and show the resultant matrix in the main function using another function and pointer*/
