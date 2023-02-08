@@ -9,6 +9,7 @@ void main()
   factorial=2;
   result=1;
   printf("this program takes a number from user as input and computes the following structure 1-(2/3!)+(3/4!)-(4/5!)+..._+(n/(n+1)!)\n");
+  printf("-------------------------------------------------------------------------------------------------------------------\n");
   printf("enter a number:");
   scanf("%d",&n);
   for(i=2;i<=n;i++)
@@ -24,7 +25,7 @@ void main()
                 result=result+value;
             }
     }
-  printf("result=%f",result);
+  printf("the value of the series upto %dth term=%f",n,result);
   getch();
 }
 

@@ -5,10 +5,13 @@ void main()
 {
     int num1,num2,num;
     printf("THIS PROGRAM SWAPS TWO NUMBERS \n");
+    printf("-------------------------------------------------------------------------------------------------------------------\n");
     printf("enter the first number:");
     scanf("%d",&num1);
     printf("enter the second number:");
     scanf("%d",&num2);
+    printf("before swapping the first number is:%d\n",num1);
+    printf("before swapping the second number is:%d\n",num2);
     num=num1;
     num1=num2;
     num2=num;

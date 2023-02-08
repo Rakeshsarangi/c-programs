@@ -23,6 +23,7 @@ void main()
 {
     int year;
     printf("this program finds whether  a year is leap year or not using functions.\n");
+    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
     printf("enter the year:");
     scanf("%d",&year);
     findLeapYear(year);

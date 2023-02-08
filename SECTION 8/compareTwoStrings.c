@@ -6,6 +6,7 @@ void main()
     int i,j,count=0;
     char str1[100],str2[100];
     printf("this program reads two strings and compare them without using strcmp() function.\n");
+    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
     printf("enter a string having maximum 1000 characters:\n");
     gets(str1);
     printf("enter another string having maximum 1000 characters:\n");

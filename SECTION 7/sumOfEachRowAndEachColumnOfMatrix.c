@@ -5,6 +5,7 @@ void main()
 {
     int row,column,i,j,sum=0;
     printf("this program calculates sum of each row and each column of a matrix\n");
+    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
     printf("enter the row size of a square matrix:");
     scanf("%d",&row);
     printf("enter the column size of a square matrix:");

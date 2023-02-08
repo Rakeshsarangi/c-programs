@@ -5,6 +5,7 @@ void main()
 {
     int number,temp,result,reminder,sum,i;
     printf("this program checks whether a number is palindrome or not \n");
+    printf("-------------------------------------------------------------------------------------------------------------------\n");
     printf("enter a number:");
     scanf("%d",&number);
     sum=0;

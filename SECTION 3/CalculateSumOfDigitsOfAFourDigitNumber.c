@@ -6,6 +6,7 @@ void main()
     int num,sum,result,reminder,i;
     sum=0;
     printf("THIS PROGRAM SHOWS SUM OF DIGITS OF A FOUR DIGIT NUMBER \n");
+    printf("-------------------------------------------------------------------------------------------------------------------\n");
     printf("enter a four digit number:");
     scanf("%d",&num);
     reminder=num%10;

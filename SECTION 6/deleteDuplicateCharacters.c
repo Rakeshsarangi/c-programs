@@ -4,10 +4,11 @@
 void main()
 {
     int n,i,j;
+    char arr[100];
     printf("THIS PROGRAM DELETE DUPLICATE CHARACTERS FROM AN ARRAY\n");
+    printf("-------------------------------------------------------------------------------------------------------------------\n");
     printf("enter the  number of elements in array:");
     scanf("%d",&n);
-    char arr[n];
     printf("enter the character in array:\n");
     for(i=0;i<n;i++)
     {

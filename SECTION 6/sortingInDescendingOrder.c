@@ -3,11 +3,11 @@
 #include<conio.h>
 void main()
 {
-    int n,i,j,temp;
+    int n,i,j,temp,numbers[100];
     printf("this program takes n inputs and arrange them in descending orders \n");
+    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
     printf("enter the number of inputs:");
     scanf("%d",&n);
-    int numbers[n];
     printf("\n enter %d numbers:\n",n);
     for(i=0;i<n;i++)
     {

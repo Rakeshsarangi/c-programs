@@ -8,6 +8,10 @@ void main()
 {
     int x,y;
     printf("this program read the value of x and evaluate some functions\n");
+    printf("y= 1 for x>0\n");
+    printf("   0 for x=0\n");
+    printf("  -1 for x<0\n");
+    printf("-------------------------------------------------------------------------------------------------------------------\n");
     printf("enter the value of x:");
     scanf("%d",&x);
     if(x>0)

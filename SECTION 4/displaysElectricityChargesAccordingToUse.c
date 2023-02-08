@@ -7,6 +7,7 @@ void main()
     int unitsConsumed,meterCharge;
     float charge;
     printf("this program shows electricity charges along with user name\n");
+    printf("-------------------------------------------------------------------------------------------------------------------\n");
     printf("enter your name:");
     gets(consumername);
     printf("enter number of units consumed:");
@@ -32,7 +33,6 @@ void main()
     {
         charge=charge+(charge*0.15);
     }
-    puts(consumername);
-    printf("your electricity charge=%.2f rupees",charge);
+    printf("%s your electricity charge is %.2f rupees.",consumername,charge);
     getch();
 }

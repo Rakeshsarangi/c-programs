@@ -5,6 +5,7 @@ void main()
 {
     int n,i,j,count=0;
     printf("CHECK WHETHER A 2D ARRAY IS SYMMETRIC OR NOT\n");
+    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
     printf("enter the row or column size of a square matrix:");
     scanf("%d",&n);
     int sqmatrix[n][n];

@@ -1,4 +1,3 @@
-
 /*this program reads a string and prints it in alphabetical order.*/
 #include<stdio.h>
 #include<conio.h>
@@ -10,6 +9,7 @@ void main()
     temp2=0;
     char str[100];
     printf("this program reads a string and prints it in alphabetical order.\n");
+    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
     printf("enter a string having maximum 1000 characters:\n");
     gets(str);
     length=strlen(str);

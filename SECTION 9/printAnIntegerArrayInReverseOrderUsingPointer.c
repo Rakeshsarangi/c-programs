@@ -5,6 +5,7 @@ void main()
 {
     int n,i;
     printf("this program reads an integer array and prints it in reverse order using a pointer.\n");
+    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
     printf("enter the number elements of the array\n");
     scanf("%d",&n);
     int arr[n];

@@ -5,6 +5,7 @@ void main()
 {
     int arr[4][5],i,j;
     printf("this program input a 4x5 matrix and displays it using pointer.\n");
+    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
     printf("enter values of a 4x5 matrix:\n");
     for(i=0;i<4;i++)
     {

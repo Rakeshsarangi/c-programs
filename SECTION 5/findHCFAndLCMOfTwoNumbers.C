@@ -1,40 +1,45 @@
 /*this program find HCF and LCM of two numbers*/
 #include<stdio.h>
 #include<conio.h>
-void main()
+int main()
 {
-    int num1,num2,HCF,LCM,smaller,i;
+    int num1,num2,HCF,LCM,smaller,greater,i;
     printf("this program find HCF and LCM of two numbers \n");
     printf("enter the first number:");
     scanf("%d",&num1);
     printf("enter the second number:");
     scanf("%d",&num2);
     smaller=num1;
+    greater=num2;
     if(num1>num2)
         {
             smaller=num2;
+            greater=num1;
         }
-    if(num1%num2==0)
+    for(i=smaller;i<=smaller;i--)
+    {
+        if(num1%i==0 && num2%i==0)
         {
-            HCF=num2;
-            LCM=num1;
+            HCF=i;
+            break;
         }
-    else if(num2%num1==0)
+        else
         {
-            HCF=num1;
-            LCM=num2;
+            continue;
         }
-    else
+    }
+    for(i=greater;i>=greater;i++)
+    {
+        if(i%num1==0 && i%num2==0)
         {
-            for(i=1;i<=smaller;i++)
-            {
-                if(num1%i==0 && num2%i==0)
-                {
-                    HCF=i;
-                    LCM=(num1*num2)/i;
-                }
-            }
+            LCM=i;
+            break;
         }
+        else
+        {
+            continue;
+        }
+    }
     printf("HCF of the numbers=%d and LCM of numbers=%d",HCF,LCM);
-    getch();
+    return 0;
 }

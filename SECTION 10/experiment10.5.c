@@ -41,6 +41,7 @@ void main()
 {
     int row,column,matrix[100][100],i,j;
     printf("this program takes a MxN matrix as input and show the largest, second largest,the smallest,second smallest number in it\n");
+    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
     printf("enter the row size of the matrix:");
     scanf("%d",&row);
     printf("enter the column size of the matrix:");

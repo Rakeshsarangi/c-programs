@@ -6,6 +6,7 @@ void main()
 
     float celcius,farenheit;
     printf("THIS PROGRAM CONVERT TEMPERATURE FROM CELCIUS TO FAHRENHEIT AND VICE VERSA \n");
+    printf("-------------------------------------------------------------------------------------------------------------------\n");
     printf("enter the temperature in celcius:");
     scanf("%f",&celcius);
     farenheit=(celcius*(9.0/5.0))+32;

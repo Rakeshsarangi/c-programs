@@ -5,6 +5,7 @@ void main()
 {
     float radius,perimeter,area;
     printf("THIS PROGRAM CACULATES PERIAMETER AND AREA OF A CIRCLE \n");
+    printf("-------------------------------------------------------------------------------------------------------------------\n");
     printf("enter the radius of the circle:");
     scanf("%f",&radius);
     perimeter=2*3.141*radius;

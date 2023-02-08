@@ -11,10 +11,11 @@ void main()
     char string[100];
     int n,i;
     printf("this program take a string as input and convert all lower case characters to upper case equivalent using function.\n");
+    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
     printf("enter the length of the string:");
     scanf("%d",&n);
     printf("enter the string:");
-    for(i=0;i<=n;i++)
+    for(i=0;i<n;i++)
     {
         scanf("%s",&string[i]);
     }

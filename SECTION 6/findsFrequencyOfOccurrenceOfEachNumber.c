@@ -3,12 +3,12 @@
 #include<conio.h>
 void main()
 {
-    int n,i,j,count,temp;
+    int n,i,j,count,temp,arr[100];
     printf("this program finds the frequency  of occurrence of each  number in an array\n");
+    printf("-------------------------------------------------------------------------------------------------------------------\n");
     printf("enter the  number of elements in array:");
     scanf("%d",&n);
-    int arr[n];
-    printf("enter the characters in array:\n");
+    printf("enter the numbers in array:\n");
     for(i=0;i<n;i++)
     {
         scanf("%d",&arr[i]);

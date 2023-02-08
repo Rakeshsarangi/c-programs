@@ -1,4 +1,4 @@
-/*this program takes a MxN matrix from the userand transpose it using function*/
+/*this program takes a MxN matrix from the user and transpose it using function*/
 #include<stdio.h>
 #include<conio.h>
 void transpose(int arr[100][100],int m,int n)
@@ -16,7 +16,8 @@ void transpose(int arr[100][100],int m,int n)
 void main()
 {
     int row,column,arr[100][100],i,j;
-    printf("this program takes a MxN matrix from the userand transpose it using function\n");
+    printf("this program takes a MxN matrix from the user and transpose it using function\n");
+    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
     printf("enter the row size of the matrix:");
     scanf("%d",&row);
     printf("enter the column size of the matrix:");

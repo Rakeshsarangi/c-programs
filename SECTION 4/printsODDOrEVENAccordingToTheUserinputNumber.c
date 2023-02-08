@@ -5,6 +5,7 @@ void main()
 {
     int number;
     printf("THIS PPROGRAM PRINTS ODD IF THE INPUT NUMBER IS odd AND PRINTS EVEN IF THE INPUT NUUMBER IS EVEN \n");
+    printf("-------------------------------------------------------------------------------------------------------------------\n");
     printf("enter a number:");
     scanf("%d",&number);
     if(number%2!=0)

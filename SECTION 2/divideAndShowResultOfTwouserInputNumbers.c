@@ -6,6 +6,7 @@ void main()
     int num1,num2;
     float result;
     printf("THIS PROGRAM TAKES TWO NUMBERS FROM USER.DIVIDES FIRST NUMBER BY SECOND NUMBER AND SHOW THE RESULT ALONG WITH THE NUMBERS \n");
+    printf("-------------------------------------------------------------------------------------------------------------------\n");
     printf("enter the first number:");
     scanf("%d",&num1);
     printf("enter the second number:");

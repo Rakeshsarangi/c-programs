@@ -5,6 +5,7 @@ void main()
 {
     int number,temp,count,result,i;
     printf("this program count the number of digits of a number \n");
+    printf("-------------------------------------------------------------------------------------------------------------------\n");
     printf("enter a number:");
     scanf("%d",&number);
     count=0;

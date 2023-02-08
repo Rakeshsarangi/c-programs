@@ -5,6 +5,7 @@ void main()
 {
     int num1,num2,num3;
     printf("THIS PROGRAM SHOWS SMALLEST NUMBER AMONG THREE USER INPUT NUMBERS \n");
+    printf("-------------------------------------------------------------------------------------------------------------------\n");
     printf("enter the first number:");
     scanf("%d",&num1);
     printf("enter the second number:");

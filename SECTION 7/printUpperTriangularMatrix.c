@@ -5,6 +5,7 @@ void main()
 {
     int n,i,j;
     printf("this program prints upper triangular matrix a square matrix\n");
+    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
     printf("enter the row or column size of a square matrix:");
     scanf("%d",&n);
     int sqmatrix[n][n];
@@ -16,6 +17,7 @@ void main()
             scanf("%d",&sqmatrix[i][j]);
         }
     }
+    printf("upper triangular matrix of the given matrix is:\n");
     for(i=0;i<n;i++)
     {
         for(j=0;j<n;j++)

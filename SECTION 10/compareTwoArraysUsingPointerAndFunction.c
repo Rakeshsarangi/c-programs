@@ -29,6 +29,7 @@ void main()
 {
     int arr1[100],arr2[100],size1,size2,result,i;
     printf("this program compares two arrays and if they are identical returns 1 otherwise returns 0 using pointer and functions./n");
+    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
     printf("enter the size of first array:");
     scanf("%d",&size1);
     printf("enter the size of second array:");

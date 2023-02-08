@@ -13,6 +13,7 @@ void main()
     printf("2.A-B\n");
     printf("3.B-A\n");
     printf("4.AXB\n");
+    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
     printf("enter the row size of matrix A\n:");
     scanf("%d",&row1);
     printf("enter the column size of matrix A\n:");
@@ -49,6 +50,7 @@ void main()
         }
         else
         {
+            printf("A+B:\n");
             for(i=0;i<row1;i++)
             {
                 for(j=0;j<column1;j++)
@@ -68,6 +70,7 @@ void main()
         }
         else
         {
+            printf("A-B:\n");
             for(i=0;i<row1;i++)
             {
                 for(j=0;j<column1;j++)
@@ -87,6 +90,7 @@ void main()
         }
         else
         {
+            printf("B-A:\n");
             for(i=0;i<row1;i++)
             {
                 for(j=0;j<column1;j++)
@@ -105,6 +109,7 @@ void main()
         }
         else
         {
+            printf("AxB:\n");
             for(i=0;i<row1;i++)
             {
                 for(j=0;j<column2;j++)

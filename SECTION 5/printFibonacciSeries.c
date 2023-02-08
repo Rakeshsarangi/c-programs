@@ -5,6 +5,7 @@ void main()
 {
     int n,term1,term2,term3,i;
     printf("this program prints the fibonacci series upto nth term \n");
+    printf("-------------------------------------------------------------------------------------------------------------------\n");
     printf("enter the number of terms of the series:");
     scanf("%d",&n);
     term1=0;

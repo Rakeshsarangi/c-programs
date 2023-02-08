@@ -7,6 +7,7 @@ void main()
     int i,j,length,count=1;
     char str[100];
     printf("this program count the number of occurrences of a specific character in a given line of text\n");
+    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
     printf("enter a string having maximum 1000 characters:\n");
     gets(str);
     length=strlen(str);
@@ -34,4 +35,5 @@ void main()
         printf("%c is present %d times in the line of text\n",str[i],count);
         count=1;
     }
+    getch();
 }

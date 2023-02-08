@@ -9,6 +9,7 @@ void main()
     Decimal RateOfInterest,time,simpleInterest,compoundInterest;
     integer principal;
     printf("THIS PROGRAM CALCULATES SIMPLE INTEREST AND COMPOUND INTEREST BY CHANGING float TO Decimal AND int TO integer \n ");
+    printf("-------------------------------------------------------------------------------------------------------------------\n");
     printf("enter the principal amount:");
     scanf("%d",&principal);
     printf("enter the rate of interest:");
@@ -17,7 +18,7 @@ void main()
     scanf("%f",&time);
     simpleInterest=principal*RateOfInterest*time/100;
     compoundInterest=(principal*(pow(1+(RateOfInterest/100),time))-principal);
-    printf("the simple interest is:%f\n",simpleInterest);
-    printf("the compound interest is:%f\n",compoundInterest);
+    printf("the simple interest is:%.2f\n",simpleInterest);
+    printf("the compound interest is:%.2f\n",compoundInterest);
     getch();
 }

@@ -34,6 +34,7 @@ void main()
     int x,n;
     float value=1;
     printf("this program evaluate following series using recursive function:x-(x^3/3!)+(x^5/5!)-(x^7/7!)+...\n");
+    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
     printf("\nenter the value of x:");
     scanf("%d",&x);
     printf("\nenter the term up to which you want to evaluate the value of the series:");
