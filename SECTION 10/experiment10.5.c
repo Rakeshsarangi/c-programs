@@ -4,6 +4,7 @@
 void sort(int matrix[100][100],int m,int n)
 {
     int i,j,k,l,temp,arr[m*n];
+    l=0;
     for(i=0;i<m;i++)
     {
 	    for(j=0;j<n;j++)
@@ -32,10 +33,79 @@ void sort(int matrix[100][100],int m,int n)
             }
         }
     }
-    printf("\nthe largest no. in the matrix is %d",arr[0]);
-    printf("\nthe second largest no. in the matrix is %d",arr[1]);
-    printf("\nthe smallest no. in the matrix is %d",arr[(m*n)-1]);
-    printf("\nthe second smallest no. in the matrix is %d",arr[(m*n)-2]);
+    if(m*n==1)
+    {
+        printf("\nthe largest no. in the matrix is %d",arr[0]);
+        printf("\nthe second largest no. in the matrix is %d",arr[0]);
+        printf("\nthe smallest no. in the matrix is %d",arr[0]);
+        printf("\nthe second smallest no. in the matrix is %d",arr[0]);
+    }
+    else if(m*n==2)
+    {
+            printf("\nthe largest no. in the matrix is %d",arr[0]);
+            printf("\nthe second largest no. in the matrix is %d",arr[1]);
+            printf("\nthe smallest no. in the matrix is %d",arr[1]);
+            printf("\nthe second smallest no. in the matrix is %d",arr[0]);
+    }
+    else if(m*n==3)
+    {
+        printf("\nthe largest no. in the matrix is %d",arr[0]);
+        if(arr[0]!=arr[1]&&arr[2]!=arr[1])
+        {
+            printf("\nthe second largest no. in the matrix is %d",arr[1]);
+            printf("\nthe second smallest no. in the matrix is %d",arr[1]);
+        }
+        else if(arr[0]==arr[1])
+        {
+            printf("\nthe second largest no. in the matrix is %d",arr[2]);
+            printf("\nthe second smallest no. in the matrix is %d",arr[1]);
+        }
+        else if(arr[1]==arr[2])
+        {
+            printf("\nthe second largest no. in the matrix is %d",arr[1]);
+            printf("\nthe second smallest no. in the matrix is %d",arr[0]);
+        }
+        printf("\nthe smallest no. in the matrix is %d",arr[2]);
+    }
+    else
+    {
+        printf("\nthe largest no. in the matrix is %d",arr[0]);
+        for(i=1;i<m*n;i++)
+        {
+            if(i==(m*n)-1)
+            {
+                printf("\nthe second largest no. in the matrix is %d",arr[i]);
+                break;
+            }
+            if(arr[i]!=arr[0])
+            {
+                printf("\nthe second largest no. in the matrix is %d",arr[i]);
+                break;
+            }
+            else
+            {
+                continue;
+            }
+        }
+        for(i=(m*n)-2;i>=0;i--)
+        {
+            if(i==0)
+            {
+                printf("\nthe second smallest no. in the matrix is %d",arr[i]);
+                break;
+            }
+            else if(arr[i]!=arr[(m*n)-1])
+            {
+                printf("\nthe second smallest no. in the matrix is %d",arr[i]);
+                break;
+            }
+            else
+            {
+                continue;
+            }
+        }
+        printf("\nthe smallest no. in the matrix is %d",arr[(m*n)-1]);
+    }
 }
 void main()
 {

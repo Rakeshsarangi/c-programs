@@ -4,16 +4,17 @@
 #include<string.h>
 void main()
 {
-    int i,j,k,length,temp1,temp2,temp;
+    int i,j,k,l,length,length1,length2,temp1,temp2,temp3,temp;
+    char str1[100],str2[100],str3[100],tempstr[100];
     temp1=0;
     temp2=0;
+    temp3=0;
     char str[100];
     printf("this program reads a string and prints it in alphabetical order.\n");
     printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
     printf("enter a string having maximum 1000 characters:\n");
     gets(str);
     length=strlen(str);
-    char str1[length],str2[length],tempstr[length];
     for(i=0;i<length;i++)
     {
         if(str[i]>=65 && str[i]<=90)
@@ -36,13 +37,19 @@ void main()
         }
         else
         {
-            printf("there is all characters are not alphabet");
-            break;
+            for(l=temp3;l<length;l++)
+            {
+                str3[l]=str[i];
+                break;
+            }
+            temp3++;
         }
     }
-    for(i=0;i<length;i++)
+    length1=strlen(str1);
+    length2=strlen(str2);
+    for(i=0;i<length1;i++)
     {
-        for(j=i+1;j<length;j++)
+        for(j=i+1;j<length1;j++)
         {
             if(str1[i]>str1[j])
             {
@@ -52,9 +59,9 @@ void main()
             }
         }
     }
-    for(i=0;i<length;i++)
+    for(i=0;i<length2;i++)
     {
-        for(j=i+1;j<length;j++)
+        for(j=i+1;j<length2;j++)
         {
             if(str2[i]>str2[j])
             {
@@ -66,28 +73,37 @@ void main()
     }
     strcpy(tempstr,str1);
     strlwr(tempstr);
-    for(i=0;i<length;i++)
+    temp=0;
+    temp1=0;
+    temp2=0;
+    for(i=temp1;i<length1;i++)
     {
-        for(j=i;j<length;j++)
+        for(j=temp2;j<length2;j++)
         {
-            if(tempstr[j]<str2[i])
+            if(tempstr[j]<str[i])
             {
-                printf("%c",str2[j]);
-                continue;
-            }
-            else if(tempstr[j]>=str2[i])
-            {
-                printf("%c",str1[j]);
-                continue;
+                for(k=temp;l<length;k++)
+                {
+                    str[k]=str2[j];
+                    temp++;
+                    temp1++;
+                    break;
+                }
             }
             else
             {
-                printf("%c",str1[j]);
-                continue;
-
+                for(k=temp;l<length;k++)
+                {
+                    str[k]=str2[i];
+                    temp++;
+                    temp2++;
+                    break;
+                }
             }
+            break;
         }
     }
-    //puts(tempstr);
+    //strcat(str,str3);
+    puts(str);
     getch();
 }

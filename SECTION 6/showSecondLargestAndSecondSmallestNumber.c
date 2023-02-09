@@ -33,14 +33,6 @@ void main()
                 continue;
             }
         }
-        if(i==1)
-        {
-            largest2=numbers[i];
-        }
-        if(i==n-2)
-        {
-            smallest2=numbers[i];
-        }
     }
     if(n==1)
     {
@@ -49,21 +41,53 @@ void main()
     }
     else if(n==2)
     {
-        if(numbers[0]>numbers[1])
+        largest2=numbers[1];
+        smallest2=numbers[0];
+    }
+    else if(n==3)
+    {
+        if(numbers[0]==numbers[1])
+        {
+            largest2=numbers[2];
+            smallest2=numbers[1];
+        }
+        else if(numbers[1]==numbers[2])
         {
             largest2=numbers[1];
             smallest2=numbers[0];
         }
         else
         {
-            largest2=numbers[0];
+            largest2=numbers[1];
             smallest2=numbers[1];
         }
     }
-    else if(n==3)
+    else
     {
-        largest2=numbers[1];
-        smallest2=numbers[1];
+        for(i=1;i<n;i++)
+        {
+            if(numbers[i]!=numbers[0])
+            {
+                largest2=numbers[i];
+                break;
+            }
+            else
+            {
+                continue;
+            }
+        }
+        for(i=n-2;i>=0;i--)
+        {
+            if(numbers[i]!=numbers[n-1])
+            {
+                smallest2=numbers[i];
+                break;
+            }
+            else
+            {
+                continue;
+            }
+        }
     }
     printf("the second largest number is:%d\n",largest2);
     printf("the second smallest number is:%d\n",smallest2);
