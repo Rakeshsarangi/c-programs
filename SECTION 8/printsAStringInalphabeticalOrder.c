@@ -12,7 +12,7 @@ void main()
     char str[100];
     printf("this program reads a string and prints it in alphabetical order.\n");
     printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
-    printf("enter a string having maximum 1000 characters:\n");
+    printf("enter a string having maximum 100 characters:\n");
     gets(str);
     length=strlen(str);
     for(i=0;i<length;i++)
@@ -45,7 +45,7 @@ void main()
             temp3++;
         }
     }
-    length1=strlen(str1);
+    /*length1=strlen(str1);
     length2=strlen(str2);
     for(i=0;i<length1;i++)
     {
@@ -70,8 +70,8 @@ void main()
                 str2[j]=temp;
             }
         }
-    }
-    strcpy(tempstr,str1);
+    }*/
+    /*strcpy(tempstr,str1);
     strlwr(tempstr);
     temp=0;
     temp1=0;
@@ -80,11 +80,11 @@ void main()
     {
         for(j=temp2;j<length2;j++)
         {
-            if(tempstr[j]<str[i])
+            if(tempstr[i]<str2[j])
             {
-                for(k=temp;l<length;k++)
+                for(k=temp;k<length;k++)
                 {
-                    str[k]=str2[j];
+                    str[k]=str1[i];
                     temp++;
                     temp1++;
                     break;
@@ -92,9 +92,9 @@ void main()
             }
             else
             {
-                for(k=temp;l<length;k++)
+                for(k=temp;k<length;k++)
                 {
-                    str[k]=str2[i];
+                    str[k]=str2[j];
                     temp++;
                     temp2++;
                     break;
@@ -102,8 +102,8 @@ void main()
             }
             break;
         }
-    }
+    }*/
     //strcat(str,str3);
-    puts(str);
+    puts(str2);
     getch();
 }
